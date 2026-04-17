@@ -18,8 +18,8 @@ export const Footer = () => (
       <div>
         <p className="hairline mb-4">Visit</p>
         <ul className="space-y-3 text-sm text-foreground/80">
-          <li className="flex gap-2"><MapPin className="size-4 text-primary mt-0.5" /> Downtown Lynchburg, VA<br />(by Riverfront Park)</li>
-          <li className="flex gap-2"><Phone className="size-4 text-primary mt-0.5" /> (434) 000-0000</li>
+          <li className="flex gap-2"><MapPin className="size-4 text-primary mt-0.5" /> 1019 Jefferson Street<br />Lynchburg, VA</li>
+          <li className="flex gap-2"><Phone className="size-4 text-primary mt-0.5" /> (434) 544-1176</li>
         </ul>
       </div>
 

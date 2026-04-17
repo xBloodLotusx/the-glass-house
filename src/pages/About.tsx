@@ -1,7 +1,8 @@
 import { Layout } from "@/components/site/Layout";
 import { SectionHeader } from "@/components/site/SectionHeader";
-import interior1 from "@/assets/interior-1.jpg";
-import interior2 from "@/assets/interior-2.jpg";
+
+const interior1 = "/The_Glass_House_Background.jpg";
+const interior2 = "/The_Glass_House_Reservations.jpg";
 
 const VALUES = [
   { title: "Seasonal", body: "Menus shift with the harvest. What's on the plate tonight reflects what's at its peak — never frozen, never forced." },

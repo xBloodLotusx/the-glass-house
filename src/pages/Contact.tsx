@@ -22,7 +22,7 @@ const Contact = () => (
               <div>
                 <p className="hairline mb-2">Address</p>
                 <p className="font-display text-2xl text-ivory leading-snug">
-                  Downtown Lynchburg<br /><span className="text-foreground/70 text-lg">by Riverfront Park · Lynchburg, VA</span>
+                  1019 Jefferson Street<br /><span className="text-foreground/70 text-lg">Lynchburg, VA, USA</span>
                 </p>
               </div>
             </div>
@@ -33,8 +33,8 @@ const Contact = () => (
               <Phone className="size-6 text-primary shrink-0 mt-1" />
               <div>
                 <p className="hairline mb-2">Phone</p>
-                <a href="tel:+14340000000" className="font-display text-2xl text-ivory hover:text-primary transition-colors">
-                  (434) 000-0000
+                <a href="tel:+14345441176" className="font-display text-2xl text-ivory hover:text-primary transition-colors">
+                  (434) 544-1176
                 </a>
               </div>
             </div>
@@ -87,7 +87,7 @@ const Contact = () => (
         <div className="border border-border/60 overflow-hidden min-h-[480px] lg:min-h-0">
           <iframe
             title="Map of downtown Lynchburg"
-            src="https://www.google.com/maps?q=Riverfront+Park+Lynchburg+VA&output=embed"
+            src="https://www.google.com/maps?q=1019+Jefferson+Street+Lynchburg+VA&output=embed"
             className="size-full grayscale-[40%] contrast-90"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

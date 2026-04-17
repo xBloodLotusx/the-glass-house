@@ -2,26 +2,15 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { SectionHeader } from "@/components/site/SectionHeader";
-import hero from "@/assets/hero-lounge.jpg";
-import scallops from "@/assets/dish-scallops.jpg";
-import cocktail from "@/assets/dish-cocktail.jpg";
-import steak from "@/assets/dish-steak.jpg";
-import octopus from "@/assets/dish-octopus.jpg";
-import interior1 from "@/assets/interior-1.jpg";
-import interior2 from "@/assets/interior-2.jpg";
-import interior3 from "@/assets/interior-3.jpg";
-import eventRoom from "@/assets/event-room.jpg";
 
 const IMAGES: { src: string; alt: string; span?: string }[] = [
-  { src: hero, alt: "The bar at dusk", span: "md:col-span-2 md:row-span-2" },
-  { src: scallops, alt: "Seared scallops" },
-  { src: cocktail, alt: "Smoked Old Fashioned" },
-  { src: interior1, alt: "Booth seating" },
-  { src: octopus, alt: "Charred octopus" },
-  { src: steak, alt: "Dry-aged ribeye", span: "md:col-span-2" },
-  { src: interior2, alt: "Bartender at work" },
-  { src: interior3, alt: "Charcuterie board" },
-  { src: eventRoom, alt: "Private dining room", span: "md:col-span-2" },
+  { src: "/The_Glass_House_Background.jpg", alt: "The Glass House", span: "md:col-span-2 md:row-span-2" },
+  { src: "/The_Glass_House_Wings.jpg", alt: "Tamarind BBQ Wings" },
+  { src: "/The_Glass_House_Tequila.jpg", alt: "Don't Text Your Ex cocktail" },
+  { src: "/The_Glass_House_Coastal_Board.jpg", alt: "Coastal Board" },
+  { src: "/The_Glass_House_Meringue.jpg", alt: "Passion Fruit Pavlova" },
+  { src: "/The_Glass_House_Reservations.jpg", alt: "The Glass House interior", span: "md:col-span-2" },
+  { src: "/The_Glass_House_Events.jpg", alt: "Private dining", span: "md:col-span-2" },
 ];
 
 const Gallery = () => {
