@@ -1,8 +1,9 @@
 import { Layout } from "@/components/site/Layout";
 import { SectionHeader } from "@/components/site/SectionHeader";
 
-const interior1 = "/The_Glass_House_Background.jpg";
-const interior2 = "/The_Glass_House_Reservations.jpg";
+const base = import.meta.env.BASE_URL;
+const interior1 = `${base}The_Glass_House_Background.jpg`;
+const interior2 = `${base}The_Glass_House_Reservations.jpg`;
 
 const VALUES = [
   { title: "Seasonal", body: "Menus shift with the harvest. What's on the plate tonight reflects what's at its peak — never frozen, never forced." },

@@ -3,14 +3,15 @@ import { X } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { SectionHeader } from "@/components/site/SectionHeader";
 
+const base = import.meta.env.BASE_URL;
 const IMAGES: { src: string; alt: string; span?: string }[] = [
-  { src: "/The_Glass_House_Background.jpg", alt: "The Glass House", span: "md:col-span-2 md:row-span-2" },
-  { src: "/The_Glass_House_Wings.jpg", alt: "Tamarind BBQ Wings" },
-  { src: "/The_Glass_House_Tequila.jpg", alt: "Don't Text Your Ex cocktail" },
-  { src: "/The_Glass_House_Coastal_Board.jpg", alt: "Coastal Board" },
-  { src: "/The_Glass_House_Meringue.jpg", alt: "Passion Fruit Pavlova" },
-  { src: "/The_Glass_House_Reservations.jpg", alt: "The Glass House interior", span: "md:col-span-2" },
-  { src: "/The_Glass_House_Events.jpg", alt: "Private dining", span: "md:col-span-2" },
+  { src: `${base}The_Glass_House_Background.jpg`, alt: "The Glass House", span: "md:col-span-2 md:row-span-2" },
+  { src: `${base}The_Glass_House_Wings.jpg`, alt: "Tamarind BBQ Wings" },
+  { src: `${base}The_Glass_House_Tequila.jpg`, alt: "Don't Text Your Ex cocktail" },
+  { src: `${base}The_Glass_House_Coastal_Board.jpg`, alt: "Coastal Board" },
+  { src: `${base}The_Glass_House_Meringue.jpg`, alt: "Passion Fruit Pavlova" },
+  { src: `${base}The_Glass_House_Reservations.jpg`, alt: "The Glass House interior", span: "md:col-span-2" },
+  { src: `${base}The_Glass_House_Events.jpg`, alt: "Private dining", span: "md:col-span-2" },
 ];
 
 const Gallery = () => {

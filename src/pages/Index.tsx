@@ -3,16 +3,17 @@ import { ArrowRight, Clock, MapPin, Calendar } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { SectionHeader } from "@/components/site/SectionHeader";
 import { Button } from "@/components/ui/button";
-const hero = "/The_Glass_House_Background.jpg";
-const interior1 = "/The_Glass_House_Background.jpg";
-const interior2 = "/The_Glass_House_Reservations.jpg";
-const interior3 = "/The_Glass_House_Events.jpg";
+const base = import.meta.env.BASE_URL;
+const hero = `${base}The_Glass_House_Background.jpg`;
+const interior1 = `${base}The_Glass_House_Background.jpg`;
+const interior2 = `${base}The_Glass_House_Reservations.jpg`;
+const interior3 = `${base}The_Glass_House_Events.jpg`;
 
 const FEATURES = [
-  { img: "/The_Glass_House_Wings.jpg", name: "Tamarind BBQ Wings", note: "Sorghum Brined Chicken Wings with a Tamarind BBQ Glaze and Mango Jicama Slaw" },
-  { img: "/The_Glass_House_Coastal_Board.jpg", name: "Coastal Board", note: "Smoked Trout, Jammy Eggs, Cucumber Radish Salad, Pickled Onion, Pumpernickel Crostini, and Caper Dill Crème Fraîche" },
-  { img: "/The_Glass_House_Tequila.jpg", name: "Don't Text Your Ex", note: "Tequila, Mango, House Habanero Bitters, Lime" },
-  { img: "/The_Glass_House_Meringue.jpg", name: "Passion Fruit Pavlova", note: "Toasted meringue with local berries and passion fruit coconut crème — dairy & gluten free" },
+  { img: `${base}The_Glass_House_Wings.jpg`, name: "Tamarind BBQ Wings", note: "Sorghum Brined Chicken Wings with a Tamarind BBQ Glaze and Mango Jicama Slaw" },
+  { img: `${base}The_Glass_House_Coastal_Board.jpg`, name: "Coastal Board", note: "Smoked Trout, Jammy Eggs, Cucumber Radish Salad, Pickled Onion, Pumpernickel Crostini, and Caper Dill Crème Fraîche" },
+  { img: `${base}The_Glass_House_Tequila.jpg`, name: "Don't Text Your Ex", note: "Tequila, Mango, House Habanero Bitters, Lime" },
+  { img: `${base}The_Glass_House_Meringue.jpg`, name: "Passion Fruit Pavlova", note: "Toasted meringue with local berries and passion fruit coconut crème — dairy & gluten free" },
 ];
 
 const Index = () => {
@@ -191,7 +192,7 @@ const Index = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {[interior1, "/The_Glass_House_Wings.jpg", "/The_Glass_House_Coastal_Board.jpg", interior3].map((src, i) => (
+            {[interior1, `${base}The_Glass_House_Wings.jpg`, `${base}The_Glass_House_Coastal_Board.jpg`, interior3].map((src, i) => (
               <img key={i} src={src} alt="The Glass House interior and dishes" loading="lazy" className="aspect-square object-cover w-full" />
             ))}
           </div>

@@ -1,7 +1,8 @@
 import { Layout } from "@/components/site/Layout";
 import { Button } from "@/components/ui/button";
 import { Phone, Users, Clock } from "lucide-react";
-const hero = "/The_Glass_House_Reservations.jpg";
+const base = import.meta.env.BASE_URL;
+const hero = `${base}The_Glass_House_Reservations.jpg`;
 
 const Reservations = () => (
   <Layout

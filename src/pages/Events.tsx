@@ -2,7 +2,8 @@ import { Layout } from "@/components/site/Layout";
 import { SectionHeader } from "@/components/site/SectionHeader";
 import { Button } from "@/components/ui/button";
 import { Music, Wine, Users, Sparkles } from "lucide-react";
-const eventRoom = "/The_Glass_House_Events.jpg";
+const base = import.meta.env.BASE_URL;
+const eventRoom = `${base}The_Glass_House_Events.jpg`;
 
 const RECURRING = [
   { icon: Music, day: "Thursday", title: "Live Jazz", time: "7 – 10 pm", body: "Local trios in residency. No cover, full menu." },
