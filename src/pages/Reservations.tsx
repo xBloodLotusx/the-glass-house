@@ -1,7 +1,7 @@
 import { Layout } from "@/components/site/Layout";
 import { Button } from "@/components/ui/button";
 import { Phone, Users, Clock } from "lucide-react";
-import hero from "@/assets/hero-lounge.jpg";
+const hero = "/The_Glass_House_Reservations.jpg";
 
 const Reservations = () => (
   <Layout
@@ -29,7 +29,7 @@ const Reservations = () => (
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-none h-14 px-10 tracking-[0.2em] text-xs uppercase">
-            <a href="tel:+14340000000">Book by Phone</a>
+              <a href="tel:+14345441176">Book by Phone</a>
           </Button>
           <Button asChild variant="outline" className="border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground rounded-none h-14 px-10 tracking-[0.2em] text-xs uppercase bg-transparent">
             <a href="mailto:reservations@theglasshouselyh.com?subject=Reservation%20Request">Request via Email</a>
@@ -44,7 +44,7 @@ const Reservations = () => (
         {[
           { icon: Clock, title: "Hours", body: "Tue–Thu 4–10 pm · Fri–Sat 4 pm – 12 am · Sun 11 am – 9 pm. Closed Mondays." },
           { icon: Users, title: "Large Parties", body: "Eight or more? Email us — we'll set up a dedicated table or a semi-private experience." },
-          { icon: Phone, title: "Same-Day", body: "For reservations within 24 hours, please call us directly at (434) 000-0000." },
+          { icon: Phone, title: "Same-Day", body: "For reservations within 24 hours, please call us directly at (434) 544-1176." },
         ].map(({ icon: Icon, ...c }) => (
           <article key={c.title} className="border border-border/60 p-8 text-center">
             <Icon className="size-7 text-primary mx-auto mb-5" />

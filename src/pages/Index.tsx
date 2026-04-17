@@ -3,20 +3,16 @@ import { ArrowRight, Clock, MapPin, Calendar } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { SectionHeader } from "@/components/site/SectionHeader";
 import { Button } from "@/components/ui/button";
-import hero from "@/assets/hero-lounge.jpg";
-import scallops from "@/assets/dish-scallops.jpg";
-import cocktail from "@/assets/dish-cocktail.jpg";
-import steak from "@/assets/dish-steak.jpg";
-import octopus from "@/assets/dish-octopus.jpg";
-import interior1 from "@/assets/interior-1.jpg";
-import interior2 from "@/assets/interior-2.jpg";
-import interior3 from "@/assets/interior-3.jpg";
+const hero = "/The_Glass_House_Background.jpg";
+const interior1 = "/The_Glass_House_Background.jpg";
+const interior2 = "/The_Glass_House_Reservations.jpg";
+const interior3 = "/The_Glass_House_Events.jpg";
 
 const FEATURES = [
-  { img: scallops, name: "Seared Scallops", note: "Brown butter, citrus, pickled fennel" },
-  { img: cocktail, name: "Smoked Old Fashioned", note: "Bourbon, demerara, applewood smoke" },
-  { img: steak, name: "44-Day Dry-Aged Ribeye", note: "Bone marrow butter, charred onion jus" },
-  { img: octopus, name: "Charred Octopus", note: "Smoked paprika romesco, salsa verde" },
+  { img: "/The_Glass_House_Wings.jpg", name: "Tamarind BBQ Wings", note: "Sorghum Brined Chicken Wings with a Tamarind BBQ Glaze and Mango Jicama Slaw" },
+  { img: "/The_Glass_House_Coastal_Board.jpg", name: "Coastal Board", note: "Smoked Trout, Jammy Eggs, Cucumber Radish Salad, Pickled Onion, Pumpernickel Crostini, and Caper Dill Crème Fraîche" },
+  { img: "/The_Glass_House_Tequila.jpg", name: "Don't Text Your Ex", note: "Tequila, Mango, House Habanero Bitters, Lime" },
+  { img: "/The_Glass_House_Meringue.jpg", name: "Passion Fruit Pavlova", note: "Toasted meringue with local berries and passion fruit coconut crème — dairy & gluten free" },
 ];
 
 const Index = () => {
@@ -130,7 +126,7 @@ const Index = () => {
               <MapPin className="size-6 text-primary shrink-0" />
               <div>
                 <p className="hairline mb-2">Find Us</p>
-                <p className="font-display text-2xl text-ivory leading-snug">Downtown Lynchburg<br />by Riverfront Park</p>
+                <p className="font-display text-2xl text-ivory leading-snug">1019 Jefferson Street<br />Lynchburg, VA</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -195,7 +191,7 @@ const Index = () => {
             </Link>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {[interior1, cocktail, octopus, interior3].map((src, i) => (
+            {[interior1, "/The_Glass_House_Wings.jpg", "/The_Glass_House_Coastal_Board.jpg", interior3].map((src, i) => (
               <img key={i} src={src} alt="The Glass House interior and dishes" loading="lazy" className="aspect-square object-cover w-full" />
             ))}
           </div>
